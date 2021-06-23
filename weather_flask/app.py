@@ -9,7 +9,7 @@ from app import app
 
 @app.route('/' , methods=['GET' , 'POST'])
 def index():
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=1c1f35ae5ea3ef3722c59d9c64a36d54'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=Enter your app id'
     city = 'bhubaneswar'
     r = requests.get(url.format(city)).json()
     footer = 'Developed by Rahul'
